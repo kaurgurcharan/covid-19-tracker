@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>COVID-19 Tracker</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" type="text/css" href="css/Grid.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/queries.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <!-- <img class="corona_image" src="https://media.giphy.com/media/dVuyBgq2z5gVBkFtDc/giphy.gif"/> -->
+      <div class="row">
+        <h1>COVID-19 Tracker</h1>
+      </div>
+      <!-- <div class="hero-text-box">
+        <ul class="total">
+          <li>Total Confirmed<i>xxx</i></li>
+          <li>Total Recovered</li>
+          <li>Total Deaths</li>
+        </ul>
+      </div> -->
+      <div class="row">
+        <div class="col span-1-of-3 box">
+          <div class="plan-box">
+            <h4>Total Confirmed</h4>
+            <h5 id="confirmed"></h5>
+          </div>
+        </div>
+        <div class="col span-1-of-3 box">
+          <div class="plan-box">
+            <h4>Total Recovered</h4>
+            <h5 id="recovered"></h5>
+          </div>
+        </div>
+        <div class="col span-1-of-3 box">
+          <div class="plan-box">
+            <h4>Total Deaths</h4>
+            <h5 id="deaths"></h5>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="dataByCountry">
+      <div class="row">
+        <h1 class="section-heading">Data by Country</h1>
+      </div>
+      <div class="row">
+        <table style="width:100%">
+          <thead>
+            <tr>
+              <th>Country</th>
+              <th>New Confirmed</th>
+              <th>New Recovered</th>
+              <th>Total Confirmed</th>
+              <th>Total Deaths</th>
+              <th>Total Recovered</th>
+            </tr>
+          </thead>
+          <tbody id="tableData"></tbody>
+        </table>
+        <p id="apiIndia"></p>
+      </div>
+    </section>
+    <footer>
+      <div class="row">
+        <h3>
+          &copy;Copyright 2020 Gurcharan Kaur
+        </h3>
+      </div>
+    </footer>
+    <script src="index.js" async defer></script>
+  </body>
+</html>

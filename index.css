@@ -1,0 +1,156 @@
+ 
+  /********************************/
+ /**********BASIC SETUP **********/
+ /********************************/
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   /* box-sizing: border-box; */
+ }
+ html {
+  background-color: #fff;
+  color: rgb(29, 27, 27);
+  font-family: 'Baloo Tamma 2', cursive;
+  font-size: 20px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  /* overflow-y: hidden; */
+}
+ /****************************************/
+/**********REUSABLE COMPONENTS **********/
+ /****************************************/
+ .row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+section {
+  padding: 60px 0;
+}
+.box {
+  padding: 1%;
+}
+
+/********HEADING*********/
+h1, h2 , h3, h4, h5 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+header {
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/background2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  background-attachment: fixed;
+  top: 0;
+}
+ h1 {
+  font-size: 250%;
+  text-align: center;
+  color: white;
+ }
+ 
+ h4, h5 {
+   color: black;
+   text-align: center;
+   /* width: 32.26%; */
+ }
+ .box h4 {
+   margin-right: 4px;
+ }
+/****************************************/
+/**********HEADER **********/
+/****************************************/
+ .plan-box {
+  background-color: #fff;
+  color: black;
+  border-radius: 5px;
+  width: 90%;
+  height: 80px;
+  margin-left: 5%;
+  margin-top: 20%;
+  padding-top: 5%;
+  box-shadow: 0 2px 2px #efefef;
+  
+ }
+ .plan-box:hover {
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+  cursor: pointer;
+ }
+ 
+ .corona_image {
+   height: 135px;
+   /* float: left; */
+   margin-left: 390px;
+} 
+ table {
+   font-family: 'Baloo Tamma 2', cursive;
+   border: 1px solid black;
+   border-collapse: collapse;
+   width: 100%;
+   background-color: white;
+ }
+ td, th {
+   border: 1px solid #cccccc;
+   padding: 5px;
+  }
+ th {
+   position: sticky;
+   top: 0;
+   width: 1140px;
+   font-weight: bold;
+   text-transform: uppercase;
+   color: white;
+   background-color: #60a3bc; 
+   background: linear-gradient((rgba(0,0,0,0.7),rgba(0,0,0,0.7)));  
+   height: 70px;
+ }
+ tr:hover {
+  background-color: #a2e0ee;
+  color: white;
+  cursor: pointer;
+  /* transform: scale(1.1);
+  transition: transform 0.5s, opacity 0.5s; */
+ }
+ tr:nth-of-type(odd) { 
+  background: #c8d6e5; 
+}
+ td {
+   padding: 5px;
+   text-align: center;
+ }
+ /* #c8d6e5 */
+/****************************************/
+/**********SECTION **********/
+/****************************************/
+.dataByCountry {
+  margin: 0 auto;
+}
+.dataByCountry .row h1:after {
+    display: block;
+    height: 2px;
+    background-color: #82ccdd;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.section-heading {
+  color: black;
+}
+
+/****************************************/
+/**********FOOTER**********/
+/****************************************/
+ footer {
+  align-items: center;
+  line-height: 5vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/background2.jpg);
+ }
+ h3 {
+   color: white;
+   text-align: center;
+  text-shadow: 5px 5px 10px rgb(126, 122, 122);
+ }
